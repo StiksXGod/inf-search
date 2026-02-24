@@ -1,0 +1,18 @@
+db:
+  host: localhost
+  port: 27017
+  name: search_engine
+  collection: documents
+
+logic:
+  delay: 0.2
+  user_agent: "MAI-IR-bot/1.0 (SearchBot/1.0)"
+  max_depth: 10
+  recrawl_interval: 86400 
+  max_documents: 35000
+
+seed_urls:
+  - url: https://ria.ru/
+    source: ria
+  - url: https://www.rbc.ru/
+    source: rbc
